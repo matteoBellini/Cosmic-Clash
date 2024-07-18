@@ -1,0 +1,64 @@
+@font-face{
+    font-family: 'PressStart2P';
+    src: url('/Cosmic-Clash/fonts/PressStart2P-Regular.woff2') format('woff2'),
+        url('/Cosmic-Clash/fonts/PressStart2P-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: blue;
+    background-color: black;
+    text-align: center;
+}
+
+#controls, a{
+    font-size: 2rem;
+}
+
+#play{
+    font-size: 5rem;
+}
+
+#splash.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.5s;
+}
+
+body{
+    background-color: black;
+    font-family: 'PressStart2P';
+}
+
+canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+    background-color: rgb(18, 16, 107);
+    background-image: url("assets/bakground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40vw;
+    height: 90vh;
+}
+
+.hidden{
+    display: none;
+}

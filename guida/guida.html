@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Giuda a Cosmic Clash</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+        <style>
+            @font-face {
+                font-family: 'PressStart2P';
+                src: url('../fonts/PressStart2P-Regular.woff2') format('woff2'),
+                    url('../fonts/PressStart2P-Regular.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: black;
+                color: white;
+            }
+            a{
+                font-family: 'PressStart2P';
+                font-size: 1.5em;
+                color: #400fe0;
+            }
+            a:hover{
+                text-shadow: 0 0 1em #400fe0;
+            }
+            div{
+                padding: 1rem;
+                border: 4px solid #400fe0;
+                border-radius: 2em;
+            }
+            h2{
+                font-family: 'PressStart2P';
+                color:#400fe0;
+            }
+            p{
+                font-size: 1em;
+            }
+            ul{
+                font-size: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="../index.php">
+                <h1>Cosmic Clash</h1>
+            </a>
+        </header>
+        <div id="guida">
+            <p>Il gioco Cosmic Clash consiste nel distruggere più navicelle aliene possibile.</p>
+            <h2>Comandi di Gioco</h2>
+            <p>Per gestire la propria navicella è possibile utilizzare i tasti:</p>
+                <ul>
+                    <li>A : per muoversi a sinistra</li>
+                    <li>D : per muoversi a destra</li>
+                    <li>Spazio : per sparare un raggio laser</li>
+                </ul>
+            <h2>Regole di gioco</h2>
+            <p>Se una navicella nemica viene colpita dal raggio laser questa esploderà e verrà assegnato un punto al giocatore. I nemici compaiono in ondate, più è alto il numero di ondata più nemici ci saranno da distruggere.</p>
+            <p>Per ogni ondata eliminata dal giocatore viene regalata una vita; il numero iniziale di vite è pari a 3.</p>
+            <p>Nel caso in cui una navicella aliena colpisca quella del giocatore vengono tolti una vita e un punto. Nel caso in cui il giocatore raggiunga 0 vite rimanenti la partita termina. La partita termina anche nel caso in cui una navicella aliena esca dalla zona visibile superando la linea di movimento del giocatore.</p>
+            <p>Una volta terminata la partita alla pressione del tasto 'h' verrà registrato l'eventuale record dell'utente e in seguito verrà reindirizzato alla pagina home dove sarà possibile consultare la classifica dei migliori 10 giocatori oltre alla propria posizione in classifica.</p>
+            <p>Dalla pagina home è inoltre possibile cambiare la propria immagine profilo scegliendo tra quelle disponibili, iniziare una nuova partita ed effettuare il logout.</p>
+        </div>
+    </body>
+</html>

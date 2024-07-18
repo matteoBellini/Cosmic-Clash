@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: url('assets/cursor.png'), auto;
+}
+canvas {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.area{
+    display: none;
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+.area-content{
+    background-color: black;
+    border: 5px solid;
+    border-image: linear-gradient(to bottom right, blue, purple, magenta);
+    border-image-slice: 1;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: fit-content;
+    color: white;
+    padding: 0.5em;
+    z-index: 2;
+}
+p{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+}
+#info{
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+label{
+    margin-bottom: 0.25em;
+    font-weight: bold;
+    font-size: 1em;
+}
+input{
+    padding: 0.5em;
+    margin-bottom: 1em;
+    color: white;
+    background-color: black;
+    border: 2px solid;
+    border-image: linear-gradient(to bottom right, blue, purple);
+    border-image-slice: 1;
+}
+button {
+    background-color: black;
+    color: white;
+    border: 4px solid;
+    border-image: linear-gradient(to bottom right, blue, purple);
+    border-image-slice: 1;
+    padding: 0.25em 1em;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+button:hover {
+    background-image: linear-gradient(to bottom right, blue, purple);
+    box-shadow: 0 0 1em 0 rgba(11, 56, 255, 0.788);
+}
+.animate {
+    -webkit-animation: animatezoom 1s;
+    animation: animatezoom 1s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.error{
+    background-color: lightcoral;
+    padding: 1rem;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: .2rem;
+    text-align: center;
+}
+a{
+    color: magenta;
+}
